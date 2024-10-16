@@ -5,10 +5,6 @@ import {
   ClerkProvider,
   ClerkLoaded,
   ClerkLoading,
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton
 } from '@clerk/nextjs'
 
 const geistSans = localFont({
@@ -40,7 +36,11 @@ export default function RootLayout({
           >
           <div className="max-w-6xl mx-auto">
             <div className="flex flex-col h-screen" >
-              {children}
+              <div className="max-w-6xl mx-auto">
+                <div className="flex flex-col h-screen" >
+                  {children}
+                </div>
+              </div>
             </div>
           </div>
         </body>
