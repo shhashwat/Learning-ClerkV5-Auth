@@ -6,6 +6,7 @@ import {
   ClerkLoaded,
   ClerkLoading,
 } from '@clerk/nextjs'
+import Navbar from "@/components/Navbar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -42,6 +43,7 @@ export default function RootLayout({
           <ClerkLoaded>
             <div className="max-w-6xl mx-auto">
               <div className="flex flex-col h-screen" >
+                <Navbar/>
                 <div className="max-w-6xl mx-auto">
                   <div className="flex flex-col h-screen" >
                     {children}
